@@ -1,0 +1,25 @@
+#statistics
+{
+    position: relative;
+}
+.statistics-item .statistics-icon
+{
+    width: 88x;
+    height: 88px;
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 16px;
+    color: #633996;
+    font-size: 45px;
+}
+.section-image
+{
+    position: absolute;
+    width: 370px;
+    top: 5%;
+    left: 10%;
+    transform: rotate(-20deg);
+    opacity: 0.2;
+}

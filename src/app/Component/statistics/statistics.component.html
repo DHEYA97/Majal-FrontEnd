@@ -1,0 +1,20 @@
+<section id="statistics" class="my-3">
+<div class="container bg-main-gradient rounded-4 text-white p-5">
+    <div class="row g-5">
+        @for (item of items; track item) {
+            <div class="col-sm-6 col-md-3">
+                <div #statisticItem class="statistics-item d-flex align-items-center">
+                    <div class="statistics-icon">
+                      <i [ngClass]="item.icon"></i>
+                    </div>
+                    <div class="ms-4 mt-3 text-center">
+                      <h4 class="counter">+{{ item.currentValue }}</h4>
+                      <h5>{{ item.name }}</h5>
+                    </div>
+                  </div>
+            </div>
+        }
+    </div>
+</div>
+<img class="section-image" src="/images/logo-white.png"/>
+</section>

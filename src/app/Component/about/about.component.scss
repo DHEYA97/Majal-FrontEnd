@@ -1,0 +1,33 @@
+#about
+{
+    position: relative;
+    overflow: hidden;
+}
+.section-image
+{
+    position: absolute;
+    width: 200px;
+    right: -3%;
+    top: 80%;
+    opacity: 0.5;
+    transform: rotate(-40deg);  
+}
+.about-text
+{
+    font-weight: 600;
+}
+.about-vesion
+{
+    position: relative;
+}
+.about-vesion::after
+{
+    content: '';
+    position: absolute;
+    top: 105%;
+    right: 0;
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    border-radius: 20px;
+}

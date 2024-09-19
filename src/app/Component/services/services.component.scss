@@ -1,0 +1,29 @@
+.service-item
+{
+    overflow: hidden;
+    margin: auto;
+    height: 100%;
+    border: 2px solid rgb(228, 228, 228,0.8);
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+.service-item:hover {
+    transform: scale(1.025) /* You can adjust the degrees to your preference */
+  }
+.service-item h4
+{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333333;
+}
+.service-item h5
+{
+    font-size: 1em;
+    font-weight: 400;
+    color: #737171;
+}
+.service-icon
+{
+    font-size: 3.5em !important;
+    color: #7047a1 !important;  
+}
