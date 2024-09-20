@@ -1,0 +1,27 @@
+.system-item
+{
+    height: 406px;
+    border-radius: 24px;
+    border: 1px solid #EEEEEE;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.system-item:hover {
+    transform: scale(1.060) /* You can adjust the degrees to your preference */
+}
+.system-item .image-container
+{
+    height: 70%;
+    border-top-right-radius: 24px ;
+    border-top-left-radius: 24px ;
+    position: relative;
+    background-color: rgb(240, 236, 245,0.5);
+}
+.system-item .image-container img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+}

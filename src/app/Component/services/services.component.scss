@@ -1,3 +1,8 @@
+#services
+{
+    background-image : url("/images/Group-6.svg");
+    filter: brightness(98.5%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+}
 .service-item
 {
     overflow: hidden;
@@ -9,7 +14,7 @@
 }
 .service-item:hover {
     transform: scale(1.025) /* You can adjust the degrees to your preference */
-  }
+}
 .service-item h4
 {
     font-size: 1.2em;

@@ -1,9 +1,10 @@
-#statistics
+#after-sale
 {
     position: relative;
 }
-.statistics-item .statistics-icon
+.after-sale-item .after-sale-icon
 {
+    margin: 1rem auto 0;
     width: 88px;
     height: 88px;
     padding: 16px;
@@ -18,8 +19,8 @@
 {
     position: absolute;
     width: 370px;
-    top: 5%;
-    left: 10%;
+    top: 25%;
+    right: 10%;
     transform: rotate(-20deg);
     opacity: 0.2;
 }

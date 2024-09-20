@@ -1,17 +1,17 @@
-import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { SharedModuelModule } from '../../shared/shared-moduel/shared-moduel.module';
 // Define an interface for the item
 interface StatisticsItem {
-  icon: string; // Font Awesome icon class
-  counter: number; // Initial counter value
-  name: string; // Text for the h5 tag
-  currentValue?: number; // To hold the current value of the counter
+  icon: string;
+  counter: number;
+  name: string;
+  currentValue?: number;
 }
 
 @Component({
   selector: 'app-statistics',
   standalone: true,
-  imports: [CommonModule],
+  imports: [SharedModuelModule],
   templateUrl: './statistics.component.html',
   styleUrl: './statistics.component.scss'
 })

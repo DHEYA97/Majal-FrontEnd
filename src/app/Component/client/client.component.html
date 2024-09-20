@@ -1,0 +1,17 @@
+<section id="client" class="mt-3 min-vh-100">
+    <div class="container py-4">
+        <div class="title text-center">
+            <img class="title-image" src="/images/logo-.png" />
+            <h2 class="fw-bold">
+                تعرف على <span class="text-main">عملائنا</span>
+            </h2>
+        </div>
+        <div class="row g-4 mt-5">
+            @for (item of items; track $index) {
+                <div class="col-sm-6 col-md-3 col-xl-2">
+                    <img [src]="item.image" [alt]="item.name" class="client-image"/>
+                </div>
+            }
+        </div>
+    </div>
+</section>
