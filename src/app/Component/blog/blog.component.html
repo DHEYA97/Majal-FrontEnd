@@ -1,0 +1,42 @@
+<section id="blog" class="mt-5 py-5">
+    <div class="container my-5">
+        <div class="row">
+            <div class="d-flex justify-content-sm-start flex-wrap mb-3">
+                    <span class="mt-3 fw-bolder"> الاقسام  :  </span>
+                    <button class="btn btn-primary m-2" (click)="filterByCategory('all')">جميع الاقسام</button>
+                @for(category of uniqueCategories; track $index){
+                    <button class="btn btn-primary m-2" (click)="filterByCategory(category)">
+                        {{ category }}
+                    </button>
+                }
+            </div>
+        </div>
+        <div class="row g-4 mx-auto">
+            @for (blog of filteredBlogs; track trackByBlogId) {
+                <div class="col-md-6 col-xl-4">
+                    <div class="card shadow">
+                        <div class="position-relative">
+                            <img [src]="blog.image" class="card-img-top shadow p-2" alt="Image 1">
+                            <div class="date-badge shadow rounded-2">
+                                <p class="fw-bolder">{{blog.date | dayOnlyPipe }}</p>
+                                <p class="fw-bold">{{blog.date | arabicMonthPipe }}</p>
+                                <p class="fw-bold">{{blog.date | yearOnly }}</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bolder text-start text-second">{{blog.category}}</h5>
+                            <hr/>
+                            <h5 class="card-title text-main fw-bold text-start">
+                                {{blog.title}}
+                            </h5>
+                            <p class="card-text text-start">
+                                {{blog.content | truncate:70}}
+                            </p>
+                            <a [routerLink]="['/blog', blog.id]" class="btn btn-gradient">+ اقرأ المزيد ...</a>
+                        </div>
+                    </div>
+                </div>           
+            }
+        </div>
+    </div>
+</section>

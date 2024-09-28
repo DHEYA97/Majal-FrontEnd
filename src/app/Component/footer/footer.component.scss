@@ -1,0 +1,49 @@
+#footer
+{
+    position: relative;
+}
+.section-image
+{
+    position: absolute;
+    width: 370px;
+    top: 20%;
+    right: -5%;
+    transform: rotate(-20deg);
+    opacity: 0.2;
+}
+.link-parent
+{
+    position: relative;
+}
+.link-parent::after
+{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 20%;
+    right: -12%;
+    border-bottom : 3px solid #fff;
+    border-left : 3px solid #fff;
+}
+.link
+{
+    list-style-type: none;
+}
+.link li
+{
+    margin-top: 0.5em;
+}
+.link a
+{
+    text-decoration: none;
+    color: white;
+}
+.ltr
+{
+    direction: ltr;
+}
+.copyright
+{
+    font-weight: 500;
+}

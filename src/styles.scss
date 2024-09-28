@@ -11,6 +11,9 @@
     font-weight: normal;
     font-style: normal;
 }
+html {
+    scroll-behavior: smooth !important;
+} 
 body {
     font-family: 'CustomFont', sans-serif !important;
 }
@@ -97,3 +100,55 @@ color: $Second-bg-color !important;
     opacity: 0.2;
     transform: rotate(-20deg);
 }
+.system-item
+{
+    height: 406px;
+    border-radius: 24px;
+    border: 1px solid #EEEEEE;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.system-item:hover {
+    transform: scale(1.060) /* You can adjust the degrees to your preference */
+}
+.system-item .image-container
+{
+    height: 70%;
+    border-top-right-radius: 24px ;
+    border-top-left-radius: 24px ;
+    position: relative;
+    background-color: rgb(240, 236, 245,0.5);
+}
+.system-item .image-container img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+}
+
+
+
+/* التحكم في عرض وارتفاع شريط التمرير */
+::-webkit-scrollbar {
+    width: 13px; /* عرض شريط التمرير الرأسي */
+    height: 29px; /* ارتفاع شريط التمرير الأفقي */
+  }
+  
+  /* تخصيص مقبض شريط التمرير */
+  ::-webkit-scrollbar-thumb {
+    background-color: $primary-bg-color; /* لون المقبض */
+    border-radius: 4px; /* جعل الأطراف دائرية */
+  }
+  
+  /* إضافة حدود لمقبض شريط التمرير */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: $Second-bg-color; /* لون المقبض عند التحويم */
+  }
+  
+  /* تخصيص المسار الخلفي لشريط التمرير */
+  ::-webkit-scrollbar-track {
+    background-color: #ecf0f1; /* لون الخلفية للمسار */
+  }
+  

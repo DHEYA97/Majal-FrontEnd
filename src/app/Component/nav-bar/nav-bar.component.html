@@ -8,29 +8,65 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-75 d-flex justify-content-around mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+          <li class="nav-item hover-text-container">
+            <a class="nav-link hover-text" 
+                [routerLink]="['/home']"
+                (click)="setActiveSection('home')"
+                [class.active]="activeSection === 'home'">
+                الرئيسية
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">من نحن</a>
+          <li class="nav-item hover-text-container">
+            <a class="nav-link hover-text" 
+                [routerLink]="['/home']" 
+                fragment="about" 
+                (click)="setActiveSection('about')"
+                [class.active]="activeSection === 'about'">
+                من نحن
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">خدمتنا</a>
+          <li class="nav-item hover-text-container">
+            <a class="nav-link hover-text" 
+                [routerLink]="['/home']" 
+                fragment="services" 
+                (click)="setActiveSection('services')"
+                [class.active]="activeSection === 'services'">
+                خدماتنا
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">انظمتنا</a>
+          <li class="nav-item hover-text-container">
+            <a class="nav-link hover-text" 
+                [routerLink]="['/home']" 
+                fragment="systems" 
+                (click)="setActiveSection('systems')"
+                [class.active]="activeSection === 'systems'">
+                انظمتنا
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">من اعمالنا</a>
+          <li class="nav-item hover-text-container">
+            <a class="nav-link hover-text" 
+                [routerLink]="['/home']" 
+                fragment="client" 
+                (click)="setActiveSection('client')"
+                [class.active]="activeSection === 'client'">
+                عملائنا
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">عملائنا</a>
+          <li class="nav-item hover-text-container">
+            <a class="nav-link hover-text" [routerLink]="['/blog']"
+            routerLinkActive="active"
+            (click)="setActiveSection('blog')"
+            [class.active]="activeSection === 'blog'">
+              المدونة
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">المدونة</a>
-          </li>
-          <li class="nav-item">
-            <button class="btn btn-gradient px-3 py-2">تواصل معنا</button>
+          
+          <li class="nav-item hover-text-container">
+            <button class="btn btn-gradient px-3 py-2" 
+                [routerLink]="['/home']" 
+                fragment="contact-us">
+                تواصل معنا
+            </button>
           </li>
         </ul>
       </div>

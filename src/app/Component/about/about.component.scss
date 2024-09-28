@@ -31,3 +31,10 @@
     background-color: white;
     border-radius: 20px;
 }
+@media screen and (max-width: 767px) {
+    .section-image
+    {
+        right: -6%;
+        top: 85%;
+    }
+}

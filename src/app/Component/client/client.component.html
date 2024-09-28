@@ -6,10 +6,12 @@
                 تعرف على <span class="text-main">عملائنا</span>
             </h2>
         </div>
-        <div class="row g-4 mt-5">
+        <div class="row row-cols-sm-2 row-cols-md-4 row-cols-xl-5 gy-3 gx-4 mt-5">
             @for (item of items; track $index) {
-                <div class="col-sm-6 col-md-3 col-xl-2">
-                    <img [src]="item.image" [alt]="item.name" class="client-image"/>
+                <div class="col shadow-sm border-3 rounded-4 d-flex justify-content-center align-items-center">
+                    <div class="p-2">
+                        <img [src]="item.image" [alt]="item.name" class="client-image"/>
+                    </div>
                 </div>
             }
         </div>

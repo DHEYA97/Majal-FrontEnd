@@ -1,0 +1,48 @@
+<section id="blog-details" class="my-5 py-5">
+    @if(blog)
+    {
+        <div class="container position-relative mb-5">
+            <div class="row mb-5">
+                <div class="col-md-9">
+                    <img [src]="blog.image" [alt]="blog.title" class="w-75 rounded-3 shadow"/>
+                    <p class="mt-4 text-main"><i class="fa-solid fa-calendar-days"></i> تاريخ النشر {{blog.date | dateFormat}} <i class="fa-solid fa-clock"></i> {{blog.date | timeFormat}}</p>
+                    <div [innerHTML]="blog.content"></div>
+                </div>
+                <div class="col-md-3 text-center my-5">
+                    <p class="social fw-bold fs-6">
+                        تابعنا على مواقع التواصل الاجتماعي
+                    </p>
+                    <div class="social mt-4 d-flex justify-content-around">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-phone fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin fs-5"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-phone fs-5"></i>
+                        </a> 
+                        <a href="#">
+                            <i class="fa-brands fa-whatsapp fs-5"></i>
+                        </a>
+                    </div>
+                    <hr/>
+                    <div>
+                        <img class="w-100" src="/images/logo.png"/>
+                        <p class="social fw-bold fs-6 mt-3">
+                            في حال وجود أي استفسار أو طلب لمعلومات إضافية يرجى عدم التردد <span class="text-second">بالتواصل معنا</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }@else{
+        <h1>Not Found</h1>
+    }
+</section>

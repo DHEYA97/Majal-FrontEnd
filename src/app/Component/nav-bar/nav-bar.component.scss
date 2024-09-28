@@ -1,4 +1,47 @@
-.nav-item a:hover
+.nav-item a:hover,.active
 {
     color: #36bdbd !important;
+}
+.hover-text-container {
+    display: inline-block;
+    position: relative;
+}
+.hover-text {
+    position: relative;
+    display: inline-block;
+}  
+.active::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #36bdbd;
+    transform: translateY(-50%);
+    transition: width 1s ease;
+    z-index: 1;
+}
+.active::before
+{
+  animation-name: top-line;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes top-line {
+    from  {
+            width: 0%;
+            left: auto;
+            right: 0;
+        }
+    to {
+            width: 100%;
+            left: auto;
+            right: 0;
+        }
+}
+.hover-text,.active {
+    position: relative;
+    z-index: 2; /* النص يظهر فوق الخط */
+    font-weight: 600 !important;
 }

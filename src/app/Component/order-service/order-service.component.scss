@@ -11,3 +11,10 @@
     transform: rotate(-20deg);
     opacity: 0.2;
 }
+
+@media screen and (max-width: 767px) {
+    .section-image
+    {
+        left: 3;
+    }
+}
