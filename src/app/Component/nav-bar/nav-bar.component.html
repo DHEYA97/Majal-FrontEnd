@@ -7,7 +7,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-75 d-flex justify-content-around mx-auto">
+        <ul class="navbar-nav w-75 d-flex text-center justify-content-between  mx-auto">
           <li class="nav-item hover-text-container">
             <a class="nav-link hover-text" 
                 [routerLink]="['/home']"
@@ -68,12 +68,20 @@
                 تواصل معنا
             </button>
           </li>
+          <li class="nav-item hover-text-container">
+            <div id="socialIcon" class="d-flex justify-content-center mt-2 align-items-center text-center ms-2">
+              <a href="https://www.linkedin.com/in/majalsoft/" target="_blank">
+                <i class="fa-brands fa-linkedin fs-5 text-main me-3"></i>
+              </a>
+              <a href="tel:+966559547633">
+                <i class="fa-solid fa-phone fs-5 text-main me-3"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=9665595476338&text&type=phone_number&app_absent=0/" target="_blank">
+                <i class="fa-brands fa-whatsapp fs-5 text-main me-3"></i>
+            </a>
+            </div>
+          </li>
         </ul>
-      </div>
-      <div id="socialIcon" class="d-flex justify-content-between align-items-center text-center  ms-5">
-          <i class="fa-brands fa-linkedin fs-5 text-main me-3"></i>
-          <i class="fa-solid fa-phone fs-5 text-main me-3"></i>
-          <i class="fa-brands fa-whatsapp fs-5 text-main"></i>
       </div>
     </div>
   </nav>

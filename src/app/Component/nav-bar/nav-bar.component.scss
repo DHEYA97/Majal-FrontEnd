@@ -45,3 +45,14 @@
     z-index: 2; /* النص يظهر فوق الخط */
     font-weight: 600 !important;
 }
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    .nav-link{
+        font-size: 12px;
+    }
+    .btn-gradient
+    {
+        font-size: 12px;
+        padding: 7px !important;
+    }
+}

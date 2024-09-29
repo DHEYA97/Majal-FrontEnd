@@ -4,23 +4,20 @@
             <div class="col-xl-4 text-center mx-auto">
                 <img src="/images/logo-white-name.png" />
                 <div class="mt-4 d-flex justify-content-around">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/majalsoft/" target="_blank">
                         <i class="fa-brands fa-linkedin fs-5 text-white"></i>
                     </a>
-                    <a href="#">
+                    <a href="tel:+966559547633">
                         <i class="fa-solid fa-phone fs-5 text-white"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://api.whatsapp.com/send/?phone=9665595476338&text&type=phone_number&app_absent=0/" target="_blank">
                         <i class="fa-brands fa-whatsapp fs-5 text-white"></i>
                     </a>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin fs-5 text-white"></i>
+                    <a href="https://www.instagram.com/majalsoft/" target="_blank">
+                        <i class="fa-brands fa-instagram fs-5 text-white"></i>
                     </a>
-                    <a href="#">
-                        <i class="fa-solid fa-phone fs-5 text-white"></i>
-                    </a> 
-                    <a href="#">
-                        <i class="fa-brands fa-whatsapp fs-5 text-white"></i>
+                    <a href="https://x.com/majalsoft" target="_blank">
+                        <i class="fa-brands fa-twitter fs-5 text-white"></i>
                     </a>
                 </div>
                 <h2 class="fs-5 mt-4 lh-base"> وجهتك الأولى لحل مشاكلك التقنية مجال تساعدك على أتمتة أعمالك.</h2>
@@ -29,23 +26,23 @@
                 <div class="row mx-auto">
                     <div class="col-md-4">
                         <p class="fw-bold ms-5 link-parent">روابط سريعة</p>
-                        <ul class="link">
-                            <li><a href="">الرئيسية</a></li>
-                            <li><a href="">من نحن</a></li>
-                            <li><a href="">خدماتنا</a></li>
-                            <li><a href="">انظمتنا</a></li>
-                            <li><a href="">عملائنا</a></li>
-                            <li><a href="">المدونة</a></li>
-                            <li><a href="">تواصل معنا</a></li>
+                        <ul class="position-relative link">
+                            <li><a [routerLink]="['/home']">الرئيسية</a></li>
+                            <li><a [routerLink]="['/home']" fragment="about">من نحن</a></li>
+                            <li><a [routerLink]="['/home']" fragment="services">خدماتنا</a></li>
+                            <li><a [routerLink]="['/home']" fragment="systems">انظمتنا</a></li>
+                            <li><a [routerLink]="['/home']" fragment="client">عملائنا</a></li>
+                            <li><a [routerLink]="['/blog']">المدونة</a></li>
+                            <li><a [routerLink]="['/home']" fragment="contact-us">تواصل معنا</a></li>
 
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <p class="fw-bold ms-5 link-parent">معلومات التواصل</p>
                         <ul class="link text-start ltr">
-                            <li><a href="">+966 552525558</a></li>
-                            <li><a href="">+966 552525558</a></li>
-                            <li><a href="">{{email}}</a></li>
+                            <li><a href="tel:+966559547633" target="_blank">+966559547633</a></li>
+                            <li><a href="tel:+966570126456" target="_blank">+966570126456</a></li>
+                            <li><a [href]="'mailto:' + email" target="_blank">{{email}}</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
